@@ -18,7 +18,7 @@ class PointsPackXY:
         '''`self.even_moves` e `self.odd_moves` é em relação aos indices das listas dentro do pack'''
 
         self.list_pack_xy = list_pack_xy
-        self.whats_move = ComputerMatrizShapeHexagon()
+        self.whats_move = ComputerMatrizShapeHexagon() #TODO mark - (check) #check the shape width value
         
         if self.list_pack_xy:
             self.new_list_pack_xy = self.pack_xy_once_more()
@@ -275,13 +275,13 @@ class PointsPackXY:
 
         if current_rounding == previous_rounding:
             index_center = math.ceil(len(points_pack)/2) - 1
-            odd_moves = self.whats_move.width/2
+            odd_moves = self.whats_move.width/2 # *(check) #
             even_moves = 0
 
         else:
             index_center = round(len(points_pack)/2) - 1
             odd_moves = 0
-            even_moves = self.whats_move.width/2
+            even_moves = self.whats_move.width/2 # *(check) #
         
         return index_center, even_moves, odd_moves
     
@@ -295,11 +295,11 @@ class PointsPackXY:
 
         return new_lists
 
+#Somente para fins de testes
 if __name__ == '__main__':
     pac = PointsPackXY([(2, 7), (5, 7), (1, 6), (2, 4), (3, 6)])
     print(pac.pack_xy_once_more())
     
-#Somente para fins de testes
 points_ordem_de_leitura={'''
         [
         [(50, 50), (100, 50), (150, 50), (200, 50), (250, 50),          (300, 50),      (350, 50), (400, 50), (450, 50), (500, 50), (550, 50)],     0
