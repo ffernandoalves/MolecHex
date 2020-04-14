@@ -9,3 +9,5 @@ pip3.7 install -r requirements.txt
 python3.7 main.py
 ```
 Feito com Python v3.7 e PyGame v2.0.0.
+
+ps: movimento do organismo bugado
