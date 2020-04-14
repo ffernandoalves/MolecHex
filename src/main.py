@@ -17,7 +17,7 @@ from _tools import Tools
 
 #IMAGENS
 #standard size: (40, 40)
-path = "/home/reufma-06/Documentos/Trabalhos-e-Latex/pyTest/gamesPython"
+path = ""
 organism_img = pygame.image.load(os.path.join(path, 'player.jpg'))
 
 #COLORS
