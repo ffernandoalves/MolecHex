@@ -84,7 +84,7 @@ class Tools:
         textoCliques = Texto("Cliques: {}".format(self.count[-1]), self.env_color[2][1], 25, self.screen)
         textoCliques.show(x - 175, y[0])'''
     
-    def matrix_original(self):
+    '''def matrix_original(self):
         posX = 620
         posY = 695
         pygame.draw.rect(self.screen, self.env_color[6][1], [posX, posY, 5*self.size_bar, self.size_bar])
@@ -94,13 +94,13 @@ class Tools:
         textoPlacar.show(645, self.height - 99)
         matriz_hexa = False
         if posX < self.mouse_x < posX + 5*self.size_bar and posY < self.mouse_y < posY + self.size_bar:
-            '''if pygame.mouse.get_pressed()[0]:
-                self.matrix.main(matriz_hexa = False)
-            elif pygame.mouse.get_pressed()[1]:
-                self.matrix.main(matriz_hexa = True)'''
-            pass
+            #if pygame.mouse.get_pressed()[0]:
+            #    self.matrix.main(matriz_hexa = False)
+            #elif pygame.mouse.get_pressed()[1]:
+            #    self.matrix.main(matriz_hexa = True)
+            pass'''
 
-    def change_color_by_molecula(self, id_pos_cor):
+    '''def change_color_by_molecula(self, id_pos_cor):
         #id_pos_cor = self.menu_moleculas()
         posXY = []
         posX = []
@@ -122,14 +122,14 @@ class Tools:
                 print('cor ativada: {}'.format(cor_in[0]))
                 self.count.append(self.count[-1]+ 1)
                 return self.count
-                '''if self.doble == True and pygame.mouse.get_pressed()[0]:
-                print('cor desativada: {}'.format(cor_in[0]))
-                self.doble = False
-                return self.count.append(self.count[-1]+ 1)'''
+                #if self.doble == True and pygame.mouse.get_pressed()[0]:
+                #print('cor desativada: {}'.format(cor_in[0]))
+                #self.doble = False
+                #return self.count.append(self.count[-1]+ 1)
             else:
                 return self.count
         else:
-            return self.count
+            return self.count'''
     
     def Cursor(self):  
         #pygame.draw.rect(self.screen, self.env_color[6][1], [posX, posY, 5*self.size_bar, self.size_bar])
