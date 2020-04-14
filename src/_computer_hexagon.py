@@ -1,4 +1,4 @@
-import math
+#import math
 
 class ComputerMatrizShapeHexagon:
     def __init__(self, size_matriz = 11):
