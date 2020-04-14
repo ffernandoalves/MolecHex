@@ -10,13 +10,13 @@ class ComputerMatrizShapeHexagon:
         self.height = 50 #
         self.size = (self.width, self.height)
         
+        #Functional for rectangular matrices, but generates only matrices of square particles.
         #Tipo quadrada -- 
-        #TODO
-        #Testa com matrizes retangulares
         if type(size_matriz) == int:
             self.size_matriz = size_matriz
             self.width_matriz = self.size_matriz
             self.height_matriz = self.size_matriz
+        #Tipo retangular -- 
         if (type(size_matriz) == list) or (type(size_matriz) == tuple):
             self.size_matriz = size_matriz
             self.width_matriz = self.size_matriz[0]
