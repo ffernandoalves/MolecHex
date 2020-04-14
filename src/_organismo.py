@@ -40,7 +40,7 @@ class Organismo:
     def add_point_in_organism(self, direction=''):
         #self.tail_off(tail='off')
         #self.direcao
-        my_step = 0
+        '''my_step = 0
         local_index = 0
         permitted_positions = []
         for i in range(len(self.packed_centers)):
@@ -66,7 +66,7 @@ class Organismo:
                     #print(index)
                     #print(posistion_addr)
         
-        #print(permitted_positions)
+        #print(permitted_positions)'''
 
         self.organismo.append([self.x, self.y])
         return {'ADDED'}
