@@ -1,6 +1,5 @@
 '''
 Author: \251 Fernando Ribeiro Alves
-
 Date: 03/2020
 '''
 
@@ -111,13 +110,9 @@ def main():
             start.organismo.direcao_organimos()
             pygame.display.update()
             CLOCK.tick(15)
-
-def test_order():
-    start = Start(env_color, dic_color, SCREEN, size_matriz=11, organism_img=(False, organism_img, (40, 40)))
-    start.points_posXY_remove(remove_points=False, size_matriz = 11)
+            
 
 if __name__ == '__main__':
-    #test_order()
 #    try:
     pygame.init()
     main()
@@ -126,4 +121,4 @@ if __name__ == '__main__':
 #        pygame.quit()
 #        print(e)
 #    finally:
-#        sys.exit("Saindo..")
+    sys.exit("Saindo..")
