@@ -1,5 +1,5 @@
 '''
-Author: \251 Fernando Ribeiro Alves
+Author: \251 ffernandoalves
 Date: 03/2020
 '''
 
