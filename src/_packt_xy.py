@@ -77,9 +77,9 @@ class PointsPackXY:
                 ... ... >>> result: [[(2, 7), (5, 7)], [(3, 6)]]
                 onde deveria ser:
                 ... ... >>> result: [[(2, 7), (5, 7)], [(1, 6), (3, 6)], [(2, 4)]]
-        \n- Dúvida: Se fazer este passo duas vezes, considerar cada sub-lista como listas e trabalha\n
-        somente com as tuplas que encontra nessas sub-listas?\n
-        Portanto, somente para valores ordenados e com pelo menos um par (tirando o caso se estiver na última posição da lista) funciona.
+        \n- Dúvida: Se fazer este passo duas vezes, considerar cada sub-lista como listas e trabalhar\n
+        somente com as tuplas que se encontra nessas sub-listas?\n
+        Portanto, somente para valores ordenados e com pelo menos um par (tirando os casos onde se estiver na última posição da lista) funciona.
         '''
 
         if direct[0] == False: #para o caso de quiser passar o valores dos pontos x e y diretamente para empacotar
@@ -195,7 +195,7 @@ class PointsPackXY:
         -------------------------
         Retorna uma matriz com os pontos removidos e a ordem do movimento das linhas na\n
         matriz (listas do package): linhas pares ou impares.\n
-        OBS: Foi escolhido o lado direito para serem tirados o maior número de elemendo da matriz.
+        OBS: Foi escolhido o lado esquerdo (da posição de quem ver pra tela lol) para serem tirados o maior número de elemendo da matriz.
         '''
 
         points_pack = self.new_list_pack_xy
