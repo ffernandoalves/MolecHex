@@ -79,10 +79,10 @@ class PointsPackXY:
                 ... ... >>> result: [[(2, 7), (5, 7)], [(1, 6), (3, 6)], [(2, 4)]]
         \n- Dúvida: Se fazer este passo duas vezes, considerar cada sub-lista como listas e trabalhar\n
         somente com as tuplas que se encontra nessas sub-listas?\n
-        Portanto, somente para valores ordenados e com pelo menos um par (tirando os casos onde se estiver na última posição da lista) funciona.
+        Portanto, somente para valores ordenados e com pelo menos um par (tirando os casos quando estiver na última posição da lista) funciona.
         '''
 
-        if direct[0] == False: #para o caso de quiser passar o valores dos pontos x e y diretamente para empacotar
+        if direct[0] == False: #para o caso de querer passar o valores dos pontos x e y diretamente para empacotar
             x, y = self.unpack_xy()
         else:
             x, y = direct[1], direct[2]
