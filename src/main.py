@@ -27,8 +27,8 @@ dic_color = [
     ('PINK', (197, 131, 129), 1),
     ('BLUE', (155, 209, 205), 2),
     ('YELLOW', (204,187,153), 3),
-    ('LIGHT_PURPLE', (209,135,201), 4),
-    ('SWEET_BROWN', (168,65,64), 5), #púrpura
+    ('LIGHT_PURPLE', (209,135,201), 4),#púrpura
+    ('SWEET_BROWN', (168,65,64), 5), 
     ('KABUL', (106, 75,62), 6),      #marromTolete
     ('PURPLE', (183,157,217), 7)]    #roxo
 #------------
